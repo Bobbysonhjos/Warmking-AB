@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+                            
+     
+
+:root{
+    --background-color: white; 
+    --header-text-color:white;
+    --footer-text-color:#eee;
+    --secondary-color: #eee;
+    --cta-color:rgb(219, 153, 11);
+    --box-shadow:2px 2px 2px lightgray;
+    --text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.siteheader{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    padding: 40px;
+    /* box-shadow: var(--box-shadow); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--header-text-color);
+    font-weight: 700;
+}
+
+
+.navmenu{
+    display:flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navicons{
+    display:none;
+    list-style: none;
+    gap: 5px;
+}
+
+.logo{
+    width: 200px;
+    font-size:26px;
+}
+
+.logoicon{
+    font-size:26px;
+    color: var(--secondary-color);
+}
+
+
+.logopart2{
+    color: var(--cta-color);
+margin-left: 5px;
+}
+
+.headeranchor{
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+.navicons__headeranchor{
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size:26px;
+    color: var(--secondary-color);
+}
+
+
+.headeranchor:hover{
+    background-color: var(--cta-color);
+}
+
+.rightimage{
+    width:300px;
+}
+
+
+
+.navicons__headeranchor:hover{
+    color: var(--cta-color);
+}
+
+
+.card{
+    width: 500px;
+}
+
+footer{
+    height:60px;
+    background-color: black;
+    color: var(--footer-text-color);
+}
+   
+
+
+section{
+    text-align: center;
+    padding: 20px 7%;    
+}
+
+
+
+body{
+    background: url('./images/warmking.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color:white;
+    /* display:flex; */
+    align-items: center;
+}
+
+
+
+form{
+    color: black;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f5c115e7;
+    padding: 20px;
+  }
+
+
+
+.display-nav{
+  display: block !important  ;
+}
+
+
+main{
+    min-height: calc(100vh - 80px - 60px);
+    padding: 10px 30px;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.privacy-container{
+    background-color: rgba(255, 255, 255, 0.822);
+    color: black;
+    padding: 20px 50px;
+}
+.privacy-container li {
+    margin-left: 20px;
+}
+
+.news{
+    margin: 50px 0;
+    padding: 20px;
+    background-color: rgba(131, 131, 131, 0.829);
+    border-radius: 5px;
+}
+
+.news-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+}
+.read-more{
+    display: block;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color:inherit;
+    background-color: grey;
+    margin: 15px auto 0 auto;
+    padding:5px 15px;
+}
+.read-more:hover{
+    background-color: var(--cta-color);
+}
+
+.product-container{
+    display: flex;
+    gap: 20px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+
+
+.prodCard{
+    background-color: var(--cta-color);
+    color: black;
+    border-radius: 6px;
+    padding: 20px;
+    min-height: min-content;
+    width: 250px;
+}
+.prodCard img{
+    border-radius: 6px;
+}
+.bxs-crown{
+    color: var(--cta-color);
+
+}
+@media only screen and (max-width:700px){
+
+    #navmenu{
+        display:none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background:inherit;
+        width: 100%;
+        line-height: 50px;
+        padding: 0px 30px;
+        padding-bottom: 50px ;
+    }
+    .navicons{
+        display: block;
+    }
+    .navmenu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
